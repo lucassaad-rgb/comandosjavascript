@@ -1,0 +1,29 @@
+function fazerPergunta() {
+
+  let iniciar = confirm("Bem-vindo ao assistente da Copa do Mundo de 2026! Deseja iniciar a pesquisa?");
+
+  if (!iniciar) {
+    alert("Pesquisa cancelada.");
+    return; // Encerra a função se o usuário clicar em "Cancelar"
+  }
+
+  let resposta = prompt(
+    "Qual país você acha que vai ganhar a Copa de 2026?\n1 - Brasil\n2 - Argentina\n3 - Outro país"
+  );
+
+  switch (resposta) {
+    case "1":
+      alert("Rumo ao Hexa! A seleção brasileira vai com tudo em 2026!");
+      break;
+    case "2":
+      alert("Os atuais campeões sempre chegam fortes na disputa!");
+      break;
+    case "3":
+      alert("A Copa de 2026 terá 48 seleções, tudo pode acontecer!");
+      break;
+    default:
+      alert("Você não digitou 1, 2 ou 3. Tente novamente!");
+  }
+}
+
+fazerPergunta();
